@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--loading-->
+        <scene sceneID="MV8-Zk-Sxj">
+            <objects>
+                <controller identifier="loading" hidesWhenLoading="NO" id="yKM-WN-3Gh" customClass="LoadingController" customModule="LetoTogglWatchiOS_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" id="tQ9-Qt-dGn">
+                            <items>
+                                <imageView width="1" height="1" alignment="left" id="egu-Wz-Pix"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="indicatorImage" destination="egu-Wz-Pix" id="4Vl-dp-bbx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="48"/>
+        </scene>
+        <!--loginRequest-->
+        <scene sceneID="WDz-OA-gUI">
+            <objects>
+                <controller identifier="loginRequest" id="xGc-ca-17h">
+                    <items>
+                        <group width="1" height="147.5" alignment="left" layout="vertical" id="dgp-aZ-9ab">
+                            <items>
+                                <label width="1" alignment="left" text="You need to login from the main app first." textAlignment="center" numberOfLines="3" id="auR-Us-Png"/>
+                                <imageView width="1" height="86" alignment="left" image="rounded_icon" contentMode="center" id="wdI-rj-Vfk"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="521" y="49"/>
+        </scene>
+        <!--Current-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="current" title="Current" id="AgC-eL-Hgc" customClass="CurrentTaskController" customModule="LetoTogglWatchiOS_Extension">
+                    <items>
+                        <group width="1" height="93.5" alignment="left" layout="vertical" id="zDp-d2-IkD">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" radius="5" id="8UH-Qr-wOS">
+                                    <items>
+                                        <label width="1" alignment="left" text="Test" textAlignment="center" numberOfLines="2" id="fc4-oX-eNz">
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                        </label>
+                                        <group width="1" alignment="left" id="vKV-5B-oU7">
+                                            <items>
+                                                <label width="1" alignment="left" text="Proj name" textAlignment="center" id="RBB-aY-Dno">
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                            </items>
+                                            <color key="backgroundColor" red="0.2666666667" green="0.52156862749999999" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="0.38200431034482757" colorSpace="calibratedWhite"/>
+                                </group>
+                                <label width="1" height="37" alignment="left" text="3:04:56" textAlignment="center" id="D7b-QI-UtM">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="32"/>
+                                </label>
+                            </items>
+                            <variation key="device=watch42mm" height="118.5"/>
+                        </group>
+                        <button width="1" alignment="left" title="STOP" id="LzY-FG-Fxo">
+                            <color key="backgroundColor" red="0.90196078430000004" green="0.058823529409999999" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                            <connections>
+                                <action selector="stopPressed" destination="AgC-eL-Hgc" id="0qP-mC-XsN"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="bc2-Oo-qgE">
+                        <items>
+                            <menuItem title="New Task" icon="add" id="wh6-Wa-aCT">
+                                <connections>
+                                    <action selector="newTaskPressed" destination="AgC-eL-Hgc" id="tuG-AG-PRk"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="currenTaskName" destination="fc4-oX-eNz" id="tRP-Wr-cCc"/>
+                        <outlet property="currentProjName" destination="RBB-aY-Dno" id="hTt-jK-6GZ"/>
+                        <outlet property="currentTaskDuration" destination="D7b-QI-UtM" id="xYc-I2-3zh"/>
+                        <outlet property="projNameBg" destination="vKV-5B-oU7" id="7CL-SI-Ude"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="234.51282051282053" y="346.53846153846155"/>
+        </scene>
+        <!--Last-->
+        <scene sceneID="hht-f8-Afj">
+            <objects>
+                <controller identifier="last" title="Last" id="TLR-UE-j3V" customClass="LastTaskController" customModule="LetoTogglWatchiOS_Extension">
+                    <items>
+                        <group width="1" height="93.5" alignment="left" layout="vertical" id="fg3-fA-RfQ">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" radius="5" id="SMC-aS-LYW">
+                                    <items>
+                                        <label width="1" alignment="left" text="Test" textAlignment="center" numberOfLines="2" id="F7f-I2-bTS">
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                        </label>
+                                        <group width="1" alignment="left" id="Vxv-dy-vwj">
+                                            <items>
+                                                <label width="1" alignment="left" text="Proj name" textAlignment="center" id="md2-rg-VA4">
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                            </items>
+                                            <color key="backgroundColor" red="0.2666666667" green="0.52156862749999999" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="0.38200431029999998" colorSpace="calibratedWhite"/>
+                                </group>
+                                <label width="1" height="37" alignment="left" text="3:04:56" textAlignment="center" id="Ewd-Vg-xtW">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="32"/>
+                                </label>
+                            </items>
+                            <variation key="device=watch42mm" height="118.5"/>
+                        </group>
+                        <button width="1" alignment="left" title="START" id="twM-RN-ZoU">
+                            <color key="backgroundColor" red="0.18431372939999999" green="0.80000001190000003" blue="0.4431372583" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                            <connections>
+                                <action selector="startPressed" destination="TLR-UE-j3V" id="gRi-UY-ykh"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lastProjName" destination="md2-rg-VA4" id="fOe-rZ-0qK"/>
+                        <outlet property="lastTaskDuration" destination="Ewd-Vg-xtW" id="PGW-vV-FUv"/>
+                        <outlet property="lastTaskName" destination="F7f-I2-bTS" id="MHV-N8-uLv"/>
+                        <outlet property="projNameBg" destination="Vxv-dy-vwj" id="Nam-rL-XQZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="512.61538461538464" y="346.53846153846155"/>
+        </scene>
+        <!--New task-->
+        <scene sceneID="GH1-z3-njP">
+            <objects>
+                <controller identifier="new_task" title="New task" id="Awu-n6-3BQ" customClass="NewTaskController" customModule="LetoTogglWatchiOS_Extension">
+                    <items>
+                        <button width="1" alignment="center" title="Watch task" id="XUN-nO-FnO">
+                            <connections>
+                                <action selector="descriptionAction" destination="Awu-n6-3BQ" id="TKI-4b-65j"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" title="Select Project" id="2Vf-gD-e3Q">
+                            <connections>
+                                <segue destination="bxn-1T-NwT" kind="modal" id="zM5-hW-3yV"/>
+                            </connections>
+                        </button>
+                        <switch width="1" alignment="center" value="YES" title="Billable" id="u1U-7H-bNB">
+                            <connections>
+                                <action selector="switchAction:" destination="Awu-n6-3BQ" id="W7g-Gi-LHQ"/>
+                            </connections>
+                        </switch>
+                        <button width="1" alignment="left" title="START" id="bMT-sG-fZu">
+                            <color key="backgroundColor" red="0.17254901959999999" green="0.7725490196" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                            <connections>
+                                <action selector="startAction" destination="Awu-n6-3BQ" id="eYd-Zv-T4N"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="billableSwitch" destination="u1U-7H-bNB" id="iWM-dp-pKP"/>
+                        <outlet property="descriptionBtn" destination="XUN-nO-FnO" id="Qx0-VN-LU9"/>
+                        <outlet property="projectBtn" destination="2Vf-gD-e3Q" id="mbJ-4m-x21"/>
+                        <outlet property="startBtn" destination="bMT-sG-fZu" id="k7q-zB-7IJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="793" y="346"/>
+        </scene>
+        <!--Projects-->
+        <scene sceneID="ZY6-q4-w9I">
+            <objects>
+                <controller title="Projects" id="bxn-1T-NwT" customClass="ProjectsListController" customModule="LetoTogglWatchiOS_Extension">
+                    <items>
+                        <table alignment="left" id="67p-Lm-n9Z">
+                            <items>
+                                <tableRow identifier="ProjectRow" id="uQz-uS-KaC" customClass="ProjectsRowController" customModule="LetoTogglWatchiOS_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="s3U-0i-yCG">
+                                        <items>
+                                            <label width="1" height="1" alignment="left" text="Label" textAlignment="center" id="4dY-XT-iva"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="mainGroup" destination="s3U-0i-yCG" id="7zo-H8-Etp"/>
+                                        <outlet property="titleLabel" destination="4dY-XT-iva" id="Ldm-JW-QwA"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="67p-Lm-n9Z" id="R6I-U6-gMq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1103" y="346"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" topTemplateType="groupLeftLarge" id="0uZ-2p-rRc" customClass="GlanceController" customModule="LetoTogglWatchiOS_Extension">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <imageView alignment="left" image="circle_icon" id="egC-3Q-KQi"/>
+                            </items>
+                        </group>
+                        <label alignment="left" id="UBI-sf-hZm"/>
+                        <label alignment="left" id="MTM-wT-5Qw"/>
+                        <label alignment="left" id="nZZ-FP-A7G"/>
+                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <group width="1" height="114" alignment="left" hidden="YES" id="Ho6-ux-EXg">
+                                    <items>
+                                        <label width="1" height="1" alignment="left" text="You are not tracking any task." textAlignment="center" numberOfLines="3" id="z0V-2y-5b0"/>
+                                    </items>
+                                </group>
+                                <group width="1" height="114" alignment="left" hidden="YES" id="PIs-vn-sAQ">
+                                    <items>
+                                        <label width="1" height="1" alignment="left" text="Loading..." textAlignment="center" numberOfLines="3" id="d2v-PK-fVf"/>
+                                    </items>
+                                </group>
+                                <group width="1" height="114" alignment="left" hidden="YES" id="LAh-Mx-ZD3">
+                                    <items>
+                                        <label width="1" height="1" alignment="left" text="You need to login from the main app first." textAlignment="center" numberOfLines="3" id="Si4-xM-re5"/>
+                                    </items>
+                                </group>
+                                <group width="1" height="1" alignment="left" layout="vertical" id="5Us-BP-eBj">
+                                    <items>
+                                        <group width="1" height="1" alignment="left" layout="vertical" radius="5" id="3g0-cN-4ul">
+                                            <items>
+                                                <label width="1" height="70.5" alignment="left" text="Test" textAlignment="center" numberOfLines="2" id="2rg-jx-stX">
+                                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                                </label>
+                                                <group width="1" height="1" alignment="left" id="96f-7A-ASL">
+                                                    <items>
+                                                        <label width="1" height="27.5" alignment="left" text="Proj name" textAlignment="center" numberOfLines="2" id="ESX-Xd-PXy">
+                                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                                            <variation key="device=watch42mm" height="39.5"/>
+                                                        </label>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.2666666667" green="0.52156862749999999" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                            <color key="backgroundColor" white="0.33333333329999998" alpha="0.38200431029999998" colorSpace="calibratedWhite"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="currenTaskName" destination="2rg-jx-stX" id="wu5-Fn-5Cx"/>
+                        <outlet property="currentProjName" destination="ESX-Xd-PXy" id="6oG-xa-FFX"/>
+                        <outlet property="currentTaskDuration" destination="MTM-wT-5Qw" id="ZzT-fz-c5W"/>
+                        <outlet property="currentTaskGroup" destination="5Us-BP-eBj" id="EIJ-eb-7Yh"/>
+                        <outlet property="loadingGroup" destination="PIs-vn-sAQ" id="I11-BB-HVJ"/>
+                        <outlet property="loginGroup" destination="LAh-Mx-ZD3" id="nbs-Xw-Irx"/>
+                        <outlet property="noTaskGroup" destination="Ho6-ux-EXg" id="zWl-bp-Yw6"/>
+                        <outlet property="projNameBg" destination="96f-7A-ASL" id="Ymx-oh-JjF"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="234.51282051282053" y="671.71794871794873"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="LetoTogglWatchiOS" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>

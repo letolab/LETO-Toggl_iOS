@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (3.2.1)
+  - BFPaperButton (2.0.27):
+    - UIColor+BFPaperColors
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - Kingfisher (2.0.4)
+  - NBMaterialDialogIOS (0.2.1):
+    - BFPaperButton (~> 2.0.18)
+  - NKWatchActivityIndicator (0.1.0)
+  - NVActivityIndicatorView (2.9)
+  - TextFieldEffects (1.1.1)
+  - UIColor+BFPaperColors (1.7.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - ChameleonFramework
+  - Kingfisher
+  - NBMaterialDialogIOS
+  - NKWatchActivityIndicator
+  - NVActivityIndicatorView
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
+  BFPaperButton: 3938d9b1a430dcdbe7f3eb1d17f4d92c67828097
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Kingfisher: 8f1ec2c067ade2c549a1a594379b69c4b1ff81ab
+  NBMaterialDialogIOS: 9441614ab30bdad72776b95a702aa0502528c8b4
+  NKWatchActivityIndicator: 8eed456c975213dda81081177574e4d48e390834
+  NVActivityIndicatorView: 0084f6be71bdf4735b5424ebfb530b1e3db3276c
+  TextFieldEffects: a1a78efeb93b65c611ad287b28a068c9a4a5f5b4
+  UIColor+BFPaperColors: 03101fe6c10ed00c6daae7c26553f1de41500853
+
+PODFILE CHECKSUM: 2f0a5bcbe6f51817f1a748a4c45e318e94987757
+
+COCOAPODS: 1.0.1

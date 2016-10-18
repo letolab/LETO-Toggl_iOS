@@ -1,0 +1,32 @@
+/* 
+  MainStrings.strings
+  LetoToggliOS
+
+  Created by Lorenzo Greco on 03/03/16.
+  Copyright © 2016 Leto. All rights reserved.
+*/
+
+"localized_email" = "Email";
+"localized_password" = "Password";
+"localized_sign_in" = "SIGN IN";
+"localized_ok" = "Ok";
+"localized_cancel" = "Cancel";
+"localized_error" = "Error";
+"localized_empty_fields" = "Some fields are still empty.";
+"localized_email_not_valid" = "Your email is not valid.";
+"localized_error_login" = "Wrong username or password.";
+"localized_no_current" = "You are not tracking any task.";
+"localized_no_internet" = "No internet connection. Pull to refresh.";
+"localized_refresh" = "Refresh";
+"localized_beacon_uuid_title" = "Beacon UUID";
+"localized_beacon_uuid_message" = "Insert the beacon UUID you want to monitor for. It needs to be 36 digits long.";
+"localized_settings_message_format" = "Touch one image in order to %@ the detection.";
+"localized_beacon_enabled" = "BEACONS DETECTION ENABLED";
+"localized_beacon_disabled" = "BEACONS DETECTION DISABLED";
+"localized_geofence_enabled" = "GEOFENCE DETECTION ENABLED";
+"localized_geofence_disabled" = "GEOFENCE DETECTION DISABLED";
+"localized_all_disabled" =  "DETECTION DISABLED";
+"localized_uuid_lengh" = "The UUID length must be 36 digits long";
+"localized_address_error" = "Unable to find your location, please try with a more detailed address.";
+"localized_no_projects" =  "No projects to display.";
+

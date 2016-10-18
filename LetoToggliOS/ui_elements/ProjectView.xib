@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProjectView" customModule="Leto_Toggl" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="p52-Ps-vch"/>
+                <outlet property="projectLabel" destination="82o-79-j1s" id="P1o-20-acx"/>
+                <outlet property="timeLabel" destination="qHo-JX-Asw" id="V1J-DN-Mdi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82o-79-j1s" customClass="RoundedUILabel" customModule="Leto_Toggl" customModuleProvider="target">
+                    <rect key="frame" x="8" y="287" width="33" height="27"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="Qap-2V-ZLF"/>
+                        <constraint firstAttribute="height" constant="27" id="hQa-gX-xPN"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="xAp-SE-fWj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Qap-2V-ZLF"/>
+                            <exclude reference="xAp-SE-fWj"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHo-JX-Asw">
+                    <rect key="frame" x="518" y="290" width="74" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="CjA-Um-YmT"/>
+                        <constraint firstAttribute="height" constant="21" id="a2r-QX-0sY"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="hXN-P0-eEX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hXN-P0-eEX"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qHo-JX-Asw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="82o-79-j1s" secondAttribute="trailing" constant="8" id="3kt-mH-Ske"/>
+                <constraint firstAttribute="trailing" secondItem="qHo-JX-Asw" secondAttribute="trailing" constant="8" id="8NQ-lC-tEo"/>
+                <constraint firstItem="82o-79-j1s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Ldi-kn-YQL"/>
+                <constraint firstItem="82o-79-j1s" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QLF-3K-fF3"/>
+                <constraint firstItem="qHo-JX-Asw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lmS-ja-jLb"/>
+            </constraints>
+            <point key="canvasLocation" x="178" y="361"/>
+        </view>
+    </objects>
+</document>

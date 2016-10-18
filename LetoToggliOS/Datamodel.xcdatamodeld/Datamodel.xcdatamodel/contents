@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15A284" minimumToolsVersion="Xcode 7.0">
+    <entity name="LTData" syncable="YES">
+        <attribute name="achievements_enabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="attribute" optional="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LTData" positionX="-63" positionY="-18" width="128" height="75"/>
+    </elements>
+</model>

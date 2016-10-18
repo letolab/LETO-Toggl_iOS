@@ -1,0 +1,6 @@
+framework module NKWatchActivityIndicator {
+  umbrella header "NKWatchActivityIndicator-umbrella.h"
+
+  export *
+  module * { export * }
+}
